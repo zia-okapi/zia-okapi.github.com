@@ -61,33 +61,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00021"></a>00021 
 <a name="l00022"></a>00022   <span class="keyword">namespace </span>http
 <a name="l00023"></a>00023   {
-<a name="l00024"></a>00024     <span class="keyword">typedef</span> std::vector&lt;char&gt; RawData;
-<a name="l00025"></a>00025 
-<a name="l00029"></a>00029 
-<a name="l00030"></a><a class="code" href="classokapi_1_1http_1_1Body.html">00030</a>     <span class="keyword">class </span><a class="code" href="classokapi_1_1http_1_1Body.html">Body</a>
-<a name="l00031"></a>00031     {
-<a name="l00032"></a>00032     <span class="keyword">public</span>:
-<a name="l00033"></a>00033       <a class="code" href="classokapi_1_1http_1_1Body.html">Body</a>();
-<a name="l00034"></a>00034       <a class="code" href="classokapi_1_1http_1_1Body.html">Body</a>(std::string <span class="keyword">const</span> &amp; from);
-<a name="l00035"></a>00035       <a class="code" href="classokapi_1_1http_1_1Body.html">Body</a>(RawData <span class="keyword">const</span> &amp; from);
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037       <a class="code" href="classokapi_1_1http_1_1Body.html">Body</a> &amp;operator&lt;&lt;(std::string <span class="keyword">const</span> &amp;data);
-<a name="l00038"></a>00038       <a class="code" href="classokapi_1_1http_1_1Body.html">Body</a> &amp;operator&lt;&lt;(RawData &amp;data);
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040       RawData <span class="keyword">const</span> &amp;extractChunk(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size = 0);
-<a name="l00041"></a>00041       RawData <span class="keyword">const</span> &amp;peekChunk(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size = 0) <span class="keyword">const</span>;
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045     <span class="keyword">private</span>:
-<a name="l00046"></a>00046       RawData _data;
-<a name="l00047"></a>00047     };
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049   }
-<a name="l00050"></a>00050 
-<a name="l00051"></a>00051 }
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053 <span class="preprocessor">#endif    </span><span class="comment">/* __HTTP_BODY_HH__ */</span>
+<a name="l00024"></a>00024 
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029     <span class="keyword">typedef</span> std::vector&lt;char&gt; RawData;
+<a name="l00030"></a>00030 
+<a name="l00034"></a>00034 
+<a name="l00035"></a><a class="code" href="classokapi_1_1http_1_1Body.html">00035</a>     <span class="keyword">class </span><a class="code" href="classokapi_1_1http_1_1Body.html">Body</a>
+<a name="l00036"></a>00036     {
+<a name="l00037"></a>00037     <span class="keyword">public</span>:
+<a name="l00038"></a>00038 
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044       <a class="code" href="classokapi_1_1http_1_1Body.html#a0dec3ed1e7dc321edb75fb0784828648" title="Default constructor.">Body</a>();
+<a name="l00045"></a>00045 
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052       <a class="code" href="classokapi_1_1http_1_1Body.html#a0dec3ed1e7dc321edb75fb0784828648" title="Default constructor.">Body</a>(std::string <span class="keyword">const</span> &amp; from);
+<a name="l00053"></a>00053 
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060       <a class="code" href="classokapi_1_1http_1_1Body.html#a0dec3ed1e7dc321edb75fb0784828648" title="Default constructor.">Body</a>(RawData <span class="keyword">const</span> &amp; from);
+<a name="l00061"></a>00061 
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068       <a class="code" href="classokapi_1_1http_1_1Body.html">Body</a> &amp;<a class="code" href="classokapi_1_1http_1_1Body.html#a1ca91700fd31ed3ff978ef19c602520c" title="Fills the body content with the given string.">operator&lt;&lt;</a>(std::string <span class="keyword">const</span> &amp;data);
+<a name="l00069"></a>00069 
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076       <a class="code" href="classokapi_1_1http_1_1Body.html">Body</a> &amp;<a class="code" href="classokapi_1_1http_1_1Body.html#a1ca91700fd31ed3ff978ef19c602520c" title="Fills the body content with the given string.">operator&lt;&lt;</a>(RawData &amp;data);
+<a name="l00077"></a>00077 
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085       RawData <span class="keyword">const</span> &amp;<a class="code" href="classokapi_1_1http_1_1Body.html#a973e73967b346b9e17acae95901d70f8" title="extract a chunk of the given size from the body content">extractChunk</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classokapi_1_1http_1_1Body.html#ae8c4c219d6663e60a7194eeb61f73a91" title="Gets the raw body size.">size</a> = 0);
+<a name="l00086"></a>00086 
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094       RawData <span class="keyword">const</span> &amp;<a class="code" href="classokapi_1_1http_1_1Body.html#aed138095d7c5a0b5017c32994649b519" title="peek a chunk of the given size in the body content">peekChunk</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classokapi_1_1http_1_1Body.html#ae8c4c219d6663e60a7194eeb61f73a91" title="Gets the raw body size.">size</a> = 0) <span class="keyword">const</span>;
+<a name="l00095"></a>00095 
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classokapi_1_1http_1_1Body.html#ae8c4c219d6663e60a7194eeb61f73a91" title="Gets the raw body size.">size</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104     <span class="keyword">private</span>:
+<a name="l00105"></a>00105       RawData _data;
+<a name="l00106"></a>00106     };
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108   }
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 }
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112 <span class="preprocessor">#endif    </span><span class="comment">/* __HTTP_BODY_HH__ */</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
@@ -104,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 13 2012 20:32:52 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 13 2012 21:16:15 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

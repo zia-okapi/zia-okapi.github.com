@@ -62,27 +62,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00022"></a>00022   {
 <a name="l00023"></a>00023   <span class="keyword">public</span>:
 <a name="l00024"></a>00024 
-<a name="l00025"></a>00025     <span class="keyword">enum</span> Status
-<a name="l00026"></a>00026     {
-<a name="l00027"></a>00027       ALLOW, DISALLOW
-<a name="l00028"></a>00028     };
-<a name="l00029"></a>00029 
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classokapi_1_1IConnection.html#a7c202f0038dba2aa03693267a2337b63" title="Sets the ip of the incoming connection.">setIp</a>(std::string <span class="keyword">const</span> &amp;ip) = 0;
-<a name="l00037"></a>00037 
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044     <span class="keyword">virtual</span> std::string <span class="keyword">const</span> &amp;<a class="code" href="classokapi_1_1IConnection.html#acf3535eb3a57cc74ff7145e70897d25c" title="Gets the ip of the connection.">getIp</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
-<a name="l00045"></a>00045 
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classokapi_1_1IConnection.html#a37f41ce0612ce05f402470d98577ee53" title="Sets the port the remote client is connecting to.">setPort</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port) = 0;
-<a name="l00053"></a>00053 
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060     <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classokapi_1_1IConnection.html#a589851ca9e5fc123324cd2ab4f21b6ec" title="Gets the port the remote client is connected to.">getPort</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
-<a name="l00061"></a>00061   };
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 }
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065 <span class="preprocessor">#endif    </span><span class="comment">/* __ICONNECTION_HH__ */</span>
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029     <span class="keyword">enum</span> Status
+<a name="l00030"></a>00030     {
+<a name="l00031"></a>00031       ALLOW, DISALLOW
+<a name="l00032"></a>00032     };
+<a name="l00033"></a>00033 
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classokapi_1_1IConnection.html#a7c202f0038dba2aa03693267a2337b63" title="Sets the ip of the incoming connection.">setIp</a>(std::string <span class="keyword">const</span> &amp;ip) = 0;
+<a name="l00041"></a>00041 
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048     <span class="keyword">virtual</span> std::string <span class="keyword">const</span> &amp;<a class="code" href="classokapi_1_1IConnection.html#acf3535eb3a57cc74ff7145e70897d25c" title="Gets the ip of the connection.">getIp</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
+<a name="l00049"></a>00049 
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classokapi_1_1IConnection.html#a37f41ce0612ce05f402470d98577ee53" title="Sets the port the remote client is connecting to.">setPort</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port) = 0;
+<a name="l00057"></a>00057 
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064     <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classokapi_1_1IConnection.html#a589851ca9e5fc123324cd2ab4f21b6ec" title="Gets the port the remote client is connected to.">getPort</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;
+<a name="l00065"></a>00065   };
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 }
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 <span class="preprocessor">#endif    </span><span class="comment">/* __ICONNECTION_HH__ */</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
@@ -99,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 13 2012 20:32:52 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 13 2012 21:16:15 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

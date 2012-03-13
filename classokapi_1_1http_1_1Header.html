@@ -73,15 +73,15 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the content of a field.  <a href="#a3871b50fbbb9f537adf5c4fd4818ead5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Header.html#adaf9049ca8a93f4065e6c35f384d3585">setField</a> (std::string const &amp;name, std::string const &amp;value)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the content of a field.  <a href="#adaf9049ca8a93f4065e6c35f384d3585"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c5cf96fcd2ac61f77bd5670d6ca0413"></a><!-- doxytag: member="okapi::http::Header::getHeader" ref="a7c5cf96fcd2ac61f77bd5670d6ca0413" args="(void) const " -->
-std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getHeader</b> (void) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e86dac9a0eb6920a6c8e72bd40003cc"></a><!-- doxytag: member="okapi::http::Header::getHeaderFields" ref="a3e86dac9a0eb6920a6c8e72bd40003cc" args="(void) const " -->
-std::map&lt; std::string, <br class="typebreak"/>
-std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getHeaderFields</b> (void) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8ca25d0c91c79293eb7cdee2f0d7b7a"></a><!-- doxytag: member="okapi::http::Header::operator&lt;&lt;" ref="ac8ca25d0c91c79293eb7cdee2f0d7b7a" args="(std::string const &amp;data)" -->
-<a class="el" href="classokapi_1_1http_1_1Header.html">Header</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::string const &amp;data)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac34a125043dcccb9865fa58caf8d680c"></a><!-- doxytag: member="okapi::http::Header::operator&lt;&lt;" ref="ac34a125043dcccb9865fa58caf8d680c" args="(std::pair&lt; std::string, std::string &gt; const &amp;data)" -->
-<a class="el" href="classokapi_1_1http_1_1Header.html">Header</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::pair&lt; std::string, std::string &gt; const &amp;data)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Header.html#af73d852b5115e170bea82c1ab83552b9">getHeader</a> (void) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the header content.  <a href="#af73d852b5115e170bea82c1ab83552b9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
+std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Header.html#a08fb840e4fba58017cb8e95fff5b6fc9">getHeaderFields</a> (void) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the header content.  <a href="#a08fb840e4fba58017cb8e95fff5b6fc9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classokapi_1_1http_1_1Header.html">Header</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Header.html#aa7da89db81fe764535ed2e35cee9b4f1">operator&lt;&lt;</a> (std::string const &amp;data)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the header content with the given string.  <a href="#aa7da89db81fe764535ed2e35cee9b4f1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classokapi_1_1http_1_1Header.html">Header</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Header.html#a9cafe474438b1e329b9ca9de5c6c0460">operator&lt;&lt;</a> (std::pair&lt; std::string, std::string &gt; const &amp;data)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the header content with the given key-value entry.  <a href="#a9cafe474438b1e329b9ca9de5c6c0460"></a><br/></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a3871b50fbbb9f537adf5c4fd4818ead5"></a><!-- doxytag: member="okapi::http::Header::getField" ref="a3871b50fbbb9f537adf5c4fd4818ead5" args="(std::string const &amp;name) const " -->
@@ -110,6 +110,46 @@ std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom">
 
 </div>
 </div>
+<a class="anchor" id="af73d852b5115e170bea82c1ab83552b9"></a><!-- doxytag: member="okapi::http::Header::getHeader" ref="af73d852b5115e170bea82c1ab83552b9" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string const &amp; okapi::http::Header::getHeader </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets the header content. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A reference to the header content as a string </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a08fb840e4fba58017cb8e95fff5b6fc9"></a><!-- doxytag: member="okapi::http::Header::getHeaderFields" ref="a08fb840e4fba58017cb8e95fff5b6fc9" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::string &gt; const &amp; okapi::http::Header::getHeaderFields </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets the header content. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A reference to the header content as a key-value map </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a95c4e99e4ceee026e8b7fecf0ac99161"></a><!-- doxytag: member="okapi::http::Header::hasField" ref="a95c4e99e4ceee026e8b7fecf0ac99161" args="(std::string const &amp;name) const " -->
 <div class="memitem">
 <div class="memproto">
@@ -133,6 +173,56 @@ std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom">
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A boolean : true if the field is set, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9cafe474438b1e329b9ca9de5c6c0460"></a><!-- doxytag: member="okapi::http::Header::operator&lt;&lt;" ref="a9cafe474438b1e329b9ca9de5c6c0460" args="(std::pair&lt; std::string, std::string &gt; const &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classokapi_1_1http_1_1Header.html">Header</a> &amp; okapi::http::Header::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::pair&lt; std::string, std::string &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fills the header content with the given key-value entry. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Key-value entry to be added to the header content </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa7da89db81fe764535ed2e35cee9b4f1"></a><!-- doxytag: member="okapi::http::Header::operator&lt;&lt;" ref="aa7da89db81fe764535ed2e35cee9b4f1" args="(std::string const &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classokapi_1_1http_1_1Header.html">Header</a> &amp; okapi::http::Header::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fills the header content with the given string. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>String to be added to the header content </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -216,7 +306,7 @@ std::string &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom">
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 13 2012 20:32:52 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 13 2012 21:16:15 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

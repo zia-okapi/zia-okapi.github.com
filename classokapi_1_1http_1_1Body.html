@@ -65,21 +65,198 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af641c27a40410dd25cd1df0851382398"></a><!-- doxytag: member="okapi::http::Body::Body" ref="af641c27a40410dd25cd1df0851382398" args="(std::string const &amp;from)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Body</b> (std::string const &amp;from)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ad08443edc8dcfc4a4ad731f56c211f"></a><!-- doxytag: member="okapi::http::Body::Body" ref="a7ad08443edc8dcfc4a4ad731f56c211f" args="(RawData const &amp;from)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Body</b> (RawData const &amp;from)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d3a64bd684a345ef281ff55cff16887"></a><!-- doxytag: member="okapi::http::Body::operator&lt;&lt;" ref="a3d3a64bd684a345ef281ff55cff16887" args="(std::string const &amp;data)" -->
-<a class="el" href="classokapi_1_1http_1_1Body.html">Body</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::string const &amp;data)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8014fbfc30e5f6903aa8062ead46c518"></a><!-- doxytag: member="okapi::http::Body::operator&lt;&lt;" ref="a8014fbfc30e5f6903aa8062ead46c518" args="(RawData &amp;data)" -->
-<a class="el" href="classokapi_1_1http_1_1Body.html">Body</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (RawData &amp;data)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03609e0b117391d33ffc9e0f093e1b7c"></a><!-- doxytag: member="okapi::http::Body::extractChunk" ref="a03609e0b117391d33ffc9e0f093e1b7c" args="(unsigned int size=0)" -->
-RawData const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>extractChunk</b> (unsigned int size=0)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc82eb95636dfabbaff6446a09cd6277"></a><!-- doxytag: member="okapi::http::Body::peekChunk" ref="acc82eb95636dfabbaff6446a09cd6277" args="(unsigned int size=0) const " -->
-RawData const &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>peekChunk</b> (unsigned int size=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8c4c219d6663e60a7194eeb61f73a91"></a><!-- doxytag: member="okapi::http::Body::size" ref="ae8c4c219d6663e60a7194eeb61f73a91" args="(void) const " -->
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dec3ed1e7dc321edb75fb0784828648"></a><!-- doxytag: member="okapi::http::Body::Body" ref="a0dec3ed1e7dc321edb75fb0784828648" args="()" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Body.html#a0dec3ed1e7dc321edb75fb0784828648">Body</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Body.html#af641c27a40410dd25cd1df0851382398">Body</a> (std::string const &amp;from)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#af641c27a40410dd25cd1df0851382398"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Body.html#a7ad08443edc8dcfc4a4ad731f56c211f">Body</a> (RawData const &amp;from)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a7ad08443edc8dcfc4a4ad731f56c211f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classokapi_1_1http_1_1Body.html">Body</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Body.html#a1ca91700fd31ed3ff978ef19c602520c">operator&lt;&lt;</a> (std::string const &amp;data)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the body content with the given string.  <a href="#a1ca91700fd31ed3ff978ef19c602520c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classokapi_1_1http_1_1Body.html">Body</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Body.html#ad4cd0e66617060eab6307610fb4d629f">operator&lt;&lt;</a> (RawData &amp;data)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the body content with the given data.  <a href="#ad4cd0e66617060eab6307610fb4d629f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RawData const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Body.html#a973e73967b346b9e17acae95901d70f8">extractChunk</a> (unsigned int size=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">extract a chunk of the given size from the body content  <a href="#a973e73967b346b9e17acae95901d70f8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RawData const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Body.html#aed138095d7c5a0b5017c32994649b519">peekChunk</a> (unsigned int size=0) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">peek a chunk of the given size in the body content  <a href="#aed138095d7c5a0b5017c32994649b519"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classokapi_1_1http_1_1Body.html#ae8c4c219d6663e60a7194eeb61f73a91">size</a> (void) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the raw body size.  <a href="#ae8c4c219d6663e60a7194eeb61f73a91"></a><br/></td></tr>
 </table>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af641c27a40410dd25cd1df0851382398"></a><!-- doxytag: member="okapi::http::Body::Body" ref="af641c27a40410dd25cd1df0851382398" args="(std::string const &amp;from)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">okapi::http::Body::Body </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>Fills the body content with the given string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7ad08443edc8dcfc4a4ad731f56c211f"></a><!-- doxytag: member="okapi::http::Body::Body" ref="a7ad08443edc8dcfc4a4ad731f56c211f" args="(RawData const &amp;from)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">okapi::http::Body::Body </td>
+          <td>(</td>
+          <td class="paramtype">RawData const &amp;&#160;</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>Fills the body content with the given data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a973e73967b346b9e17acae95901d70f8"></a><!-- doxytag: member="okapi::http::Body::extractChunk" ref="a973e73967b346b9e17acae95901d70f8" args="(unsigned int size=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RawData const &amp; okapi::http::Body::extractChunk </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>extract a chunk of the given size from the body content </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Chunk size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Extracted chunk </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad4cd0e66617060eab6307610fb4d629f"></a><!-- doxytag: member="okapi::http::Body::operator&lt;&lt;" ref="ad4cd0e66617060eab6307610fb4d629f" args="(RawData &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classokapi_1_1http_1_1Body.html">Body</a> &amp; okapi::http::Body::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">RawData &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fills the body content with the given data. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data to be added to the body content </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ca91700fd31ed3ff978ef19c602520c"></a><!-- doxytag: member="okapi::http::Body::operator&lt;&lt;" ref="a1ca91700fd31ed3ff978ef19c602520c" args="(std::string const &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classokapi_1_1http_1_1Body.html">Body</a> &amp; okapi::http::Body::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fills the body content with the given string. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>String to be added to the body content </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aed138095d7c5a0b5017c32994649b519"></a><!-- doxytag: member="okapi::http::Body::peekChunk" ref="aed138095d7c5a0b5017c32994649b519" args="(unsigned int size=0) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RawData const &amp; okapi::http::Body::peekChunk </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size</em> = <code>0</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>peek a chunk of the given size in the body content </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Chunk size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Peeked chunk </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae8c4c219d6663e60a7194eeb61f73a91"></a><!-- doxytag: member="okapi::http::Body::size" ref="ae8c4c219d6663e60a7194eeb61f73a91" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int okapi::http::Body::size </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets the raw body size. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="classokapi_1_1http_1_1Body.html">Body</a> size </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>http/<a class="el" href="Body_8hh_source.html">Body.hh</a></li>
 </ul>
@@ -98,7 +275,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> (voi
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 13 2012 20:32:52 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Mar 13 2012 21:16:15 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
