@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Main Page</title>
+<title>http/Response.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -16,9 +16,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="top">
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li id="searchli">
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -37,8 +37,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">http/Response.hh</div>  </div>
 </div>
 <div class="contents">
+<a href="Response_8hh.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef   __HTTP_RESPONSE_HH__</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor"># define  __HTTP_RESPONSE_HH__</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor"># include &quot;<a class="code" href="Body_8hh.html">Body.hh</a>&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor"># include &quot;<a class="code" href="Header_8hh.html">Header.hh</a>&quot;</span>
+<a name="l00010"></a>00010 
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="keyword">namespace </span>okapi
+<a name="l00016"></a>00016 {
+<a name="l00017"></a>00017 
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022   <span class="keyword">namespace </span>http
+<a name="l00023"></a>00023   {
+<a name="l00024"></a>00024 
+<a name="l00028"></a>00028 
+<a name="l00029"></a><a class="code" href="classokapi_1_1http_1_1Response.html">00029</a>     <span class="keyword">class </span><a class="code" href="classokapi_1_1http_1_1Response.html">Response</a>
+<a name="l00030"></a>00030     {
+<a name="l00031"></a>00031     <span class="keyword">public</span>:
+<a name="l00032"></a>00032       <a class="code" href="classokapi_1_1http_1_1Response.html">Response</a>();
+<a name="l00033"></a>00033 
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040       <a class="code" href="classokapi_1_1http_1_1Header.html">Header</a> &amp;<a class="code" href="classokapi_1_1http_1_1Response.html#a0b7e09859f2d8fa149695c7c7b62e7aa" title="Gets the header of the response.">getHeader</a>(<span class="keywordtype">void</span>);
+<a name="l00041"></a>00041 
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048       <a class="code" href="classokapi_1_1http_1_1Body.html">Body</a> &amp;<a class="code" href="classokapi_1_1http_1_1Response.html#a34d0586a2f63f7e2a4ed8dd0a5a83c49" title="Gets the body of the response.">getBody</a>(<span class="keywordtype">void</span>);
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050     <span class="keyword">private</span>:
+<a name="l00051"></a>00051       <a class="code" href="classokapi_1_1http_1_1Header.html">Header</a> _header;
+<a name="l00052"></a>00052       <a class="code" href="classokapi_1_1http_1_1Body.html">Body</a> _body;
+<a name="l00053"></a>00053     };
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055   }
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 }
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 <span class="preprocessor">#endif    </span><span class="comment">/* __HTTP_ANSWER_HH__ */</span>
+</pre></div></div>
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
