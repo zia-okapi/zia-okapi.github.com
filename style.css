@@ -1,0 +1,21 @@
+
+body {
+  background-color: #2A2829;
+  color: #B9D7D9;
+  font-family: "Helvetica Neue";
+}
+
+header.banner {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 50px;
+  height:100px;
+}
+
+a {
+  color: #B9D7D9;
+}
+
+.row.links {
+  font-size: 1.5em;
+}
